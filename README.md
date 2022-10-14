@@ -25,6 +25,8 @@ Params:
 - $url = url of the request
 
 
+    <?php
+  
     $url = "http://example.com/
 
     $curl->setUrl($url);
