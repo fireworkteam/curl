@@ -1,6 +1,6 @@
 <?php
 
-namespace Firework\Http;
+namespace Firework\Curl;
 
 class Curl
 {
