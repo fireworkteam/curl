@@ -24,13 +24,13 @@ Set url of the request \
 Params: 
 - $url = url of the request
 
-
+```
     <?php
   
     $url = "http://example.com/
 
     $curl->setUrl($url);
-
+```
 ### setHeaders()
 Set headers of the request \
 Params: 
