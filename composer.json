@@ -1,0 +1,20 @@
+{
+    "name": "fireworkteam/curl",
+    "type": "library",
+    "description": "A part of Firework, that controls sending request to rest",
+    "autoload": {
+        "psr-4": {
+            "Firework\\Http\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "FireTeam"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-curl": "*"
+    },
+    "license": "MIT"
+}
