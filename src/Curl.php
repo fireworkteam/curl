@@ -2,7 +2,7 @@
 
 namespace Firework\Http;
 
-class Client
+class Curl
 {
     public array $headers = [];
     public array $curlSettings = [];
@@ -44,7 +44,7 @@ class Client
      * @param string $url
      * @return $this
      */
-    public function setUrl(string $url): Client
+    public function setUrl(string $url): Curl
     {
         $this->curlSettings = $this->curlSettings + [
             CURLOPT_URL => $url
@@ -57,10 +57,12 @@ class Client
      * @param array $headers
      * @return $this
      */
-    public function setHeaders(array $headers): Client
+    public function setHeaders(array $headers): Curl
     {
-        $this->headers = array_merge($this->headers, $headers);
-        $this->curlSettings = $this->headers;
+        $this->headers = $this->headers + $headers;
+        $this->curlSettings = $this->curlSettings + [
+            CURLOPT_HTTPHEADER => $this->headers
+            ];
 
         return $this;
     }
@@ -69,9 +71,9 @@ class Client
      * @param array $settings
      * @return $this
      */
-    public function setCurlSettings(array $settings): Client
+    public function setCurlSettings(array $settings): Curl
     {
-        $this->curlSettings = array_merge($this->curlSettings, $settings);
+        $this->curlSettings = $this->curlSettings + $settings;
 
         return $this;
     }
