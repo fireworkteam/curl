@@ -5,7 +5,7 @@
 ```php
     <?php
 
-    use Firework\Http\Curl; // Import Curl class
+    use Firework\Curl\Curl; // Import Curl class
     require __DIR__ . '/../vendor/autoload.php'; // Import composer autoload
 
     $curl = new Curl(); // Create new Curl class
