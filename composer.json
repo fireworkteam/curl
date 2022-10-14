@@ -4,7 +4,7 @@
     "description": "A part of Firework, that controls sending request to rest",
     "autoload": {
         "psr-4": {
-            "Firework\\Http\\": "src"
+            "Firework\\Curl\\": "src"
         }
     },
     "authors": [
