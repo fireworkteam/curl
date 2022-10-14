@@ -26,6 +26,7 @@ Params:
 
 
     $url = "http://example.com/
+
     $curl->setUrl($url);
 
 ### setHeaders()
