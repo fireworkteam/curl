@@ -1,4 +1,4 @@
-# Firework PHP : HTTP Client
+# Firework PHP : Curl Service
 
 ## Basic usage
 
